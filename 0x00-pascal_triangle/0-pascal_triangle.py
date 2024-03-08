@@ -6,13 +6,15 @@ def pascal_triangle(n):
     """
     if n <= 0:
         return []
-    
-    ptriangle = [[1]]
-    for level in range(1, n):
+
+    triangle = [[1]]
+    for i in range(1, n):
+        prev_row = triangle[-1]
         row = [1]
-        for i in range(1, level):
-            row.append(ptriangle[level-1][i-1] + ptriangle[level-1][i])
+
+        for j in range(1, i):
+            row.append(prev_row[j-1] + prev_row[j])
         row.append(1)
-        ptriangle.append(row)
-    return ptriangle
+        triangle.append(row)
+    return triangle
 
