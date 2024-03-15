@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def join(T, R):
     res = []
     for e in R:
