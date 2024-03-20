@@ -1,17 +1,25 @@
 #!/usr/bin/python3
 
 """
-    Method that determines the number of minmum operations given n characters
+This script defines a function that calculates the minimum number of operations needed to reach
+a specified number of 'H' characters in a text editor. The operations are defined as either:
+1. Copy all the 'H' characters currently in the file.
+2. Paste the last copied 'H' characters into the file.
+
+The goal is to determine the fewest number of these operations required to achieve exactly 'n' 'H' characters.
 """
 
 
 def minOperations(n):
     """
-        A function that calculates the fewest number of operations
-        needed to give a result of exactly n H characters in a file
-        args: n: Number of characters to be displayed
-        return:
-               number of min operations
+    Calculate the minimum number of operations to get 'n' 'H' characters.
+
+    Parameters:
+    n (int): Target number of 'H' characters.
+
+    Returns:
+    int: Minimum number of operations required.
+
     """
 
     now = 1
