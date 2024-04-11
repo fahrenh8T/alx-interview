@@ -88,8 +88,5 @@ if __name__ == '__main__':
         r += 1
 
     # print all solutions
-    for idx, val in enumerate(solutions):
-        if idx == len(solutions) - 1:
-            print(val, end='')
-        else:
-            print(val)
+    for solution in solutions:
+        print(solution)
